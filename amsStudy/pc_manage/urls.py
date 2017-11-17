@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 from django.conf.urls import url
-import views
+from .views import *
 
 urlpatterns = [
-    url(r'^$', views.pcmindex, name='pcmindex')
+    url(r'^$', pcmindex, name='pcmindex')
 ]

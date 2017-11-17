@@ -36,7 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pc_manage',
-    'xadmin',
+    # 'xadmin',
     'crispy_forms',
     'reversion',
 )

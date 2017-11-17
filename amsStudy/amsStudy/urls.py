@@ -13,17 +13,17 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from __future__ import absolute_import
+# from __future__ import absolute_import
 from django.conf.urls import include, url
 from django.contrib import admin
-import xadmin
-xadmin.autodiscover()
+# import xadmin
+# xadmin.autodiscover()
 
-from xadmin.plugins import xversion
-xversion.register_models()
+# from xadmin.plugins import xversion
+# xversion.register_models()
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^xadmin/', include(xadmin.site.urls)),
+    # url(r'^xadmin/', include(xadmin.site.urls)),
     url(r'^pcm/', include('pc_manage.urls', namespace='pcm')),
 ]
