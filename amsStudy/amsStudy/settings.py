@@ -37,8 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'pc_manage',
     # 'xadmin',
-    'crispy_forms',
-    'reversion',
+    # 'crispy_forms',
+    # 'reversion',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'amsStudy',
         'USER': 'root',
-        'PASSWORD': 'mysql',
+        'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '3306',
     }
