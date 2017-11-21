@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pc_manage',
+    'music'
     # 'xadmin',
     # 'crispy_forms',
     # 'reversion',
@@ -80,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'amsStudy',
         'USER': 'root',
-        'PASSWORD': 'password',
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD', 'password'),
         'HOST': 'localhost',
         'PORT': '3306',
     }

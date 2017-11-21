@@ -9,7 +9,9 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
+      <introspection-schemas>*:mysql</introspection-schemas>
       <resolve-scope>mysql:</resolve-scope>
+      <unqualified-resolve-schemas>mysql:</unqualified-resolve-schemas>
     </data-source>
     <data-source name="amsStudy@localhost" uuid="d42f85ca-dc4d-4cd9-86d8-280141b161a5">
       <database-info product="MySQL" version="5.7.17-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )">
@@ -19,7 +21,9 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
+      <introspection-schemas>*:amsstudy</introspection-schemas>
       <resolve-scope>amsStudy:</resolve-scope>
+      <unqualified-resolve-schemas>amsStudy:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>
